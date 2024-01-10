@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/const_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/const_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/second_iv_1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/sample1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/const_2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/second_iv_1">
+
+                <ImageView
+                    android:id="@+id/second_iv_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_user"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="난쉽"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/second_iv_2"
+                    app:layout_constraintTop_toTopOf="@id/second_iv_2" />
+
+                <TextView
+                    android:id="@+id/tv_address2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="동래구 온천제2동"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toEndOf="@id/second_iv_2"
+                    app:layout_constraintTop_toBottomOf="@id/tv_nickname" />
+
+                <ImageView
+                    android:id="@+id/second_iv_3"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/lv6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="39.5 ℃"
+                    android:textColor="#009688"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="@id/second_iv_3"
+                    app:layout_constraintEnd_toStartOf="@id/second_iv_3"
+                    app:layout_constraintTop_toTopOf="@id/second_iv_3" />
+
+                <TextView
+                    android:id="@+id/temperature_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/temperature"
+                    android:textColor="#AAA6A6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/second_iv_3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C1C1C1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/second_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="산진 한달된 선풍기 팝니다"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이사가서 필요가 없어졌어요. 급하게 내놓습니다."
+                android:textSize="17sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/const_4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/second_iv_4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:src="@drawable/ic_heart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/second_bar"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:background="#B5B5B5"
+            app:layout_constraintBottom_toBottomOf="@id/second_iv_4"
+            app:layout_constraintStart_toStartOf="@id/second_iv_4"
+            app:layout_constraintTop_toTopOf="@id/second_iv_4" />
+
+        <TextView
+            android:id="@+id/second_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="5dp"
+            android:text="1,000원"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/second_bar"
+            app:layout_constraintStart_toEndOf="@id/second_bar"
+            app:layout_constraintTop_toTopOf="@id/second_bar" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shape2"
+            android:gravity="center"
+            android:text="채팅하기"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_leftchevron"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
